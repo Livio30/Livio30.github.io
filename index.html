@@ -13,8 +13,14 @@
     <!-- Fons Awesome Icons -->
     <link rel="stylesheet" href="/CSS/all.min.css">
 
+    <!-- Magnific Popup CSS File -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Responsive CSS File -->
+    <link rel="stylesheet" href="./CSS/responsive.css">
 
 
 </head>
@@ -25,7 +31,7 @@
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid ">
-                  <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo"></a>
+                  <a class="navbar-brand" href="#"><img src="./img/logo2.png" alt="Logo"></a>
                   <!-- <a class="navbar-brand" href="#">Livio</a> -->
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -183,7 +189,7 @@
             <h1 class="text-uppercase title-h1">Projects</h1>
           </div>
           <div class="button-group">
-            <button type="button" class="active">All</button>
+            <button type="button" id="btn1" class="active">All</button>
             <button type="button" data-filter=".beginner">Beginner</button>
             <button type="button" data-filter=".intermediate">Intermediate</button>
             <button type="button" data-filter=".advanced">Advanced</button>
@@ -192,7 +198,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item beginner">
               <div class="my-project">
                 <div class="img">
-                  <img src="/img/projects/project1.jpg" alt="Project 1">
+                  <a class="project-popup-link" href="./img/projects/project1.jpg">
+                    <img src="/img/projects/project1.jpg" alt="Project 1">
+                  </a>
                 </div>
                 <div class="title py4">
                   <h4 class="text-uppercase">Resturent Site</h4>
@@ -203,7 +211,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item intermediate">
               <div class="my-project">
                 <div class="img">
-                  <img src="/img/projects/project2.jpg" alt="Project 2">
+                  <a class="project-popup-link" href="./img/projects/project2.jpg">
+                    <img src="/img/projects/project2.jpg" alt="Project 2">
+                  </a>
                 </div>
                 <div class="title py4">
                   <h4 class="text-uppercase">College Site</h4>
@@ -214,7 +224,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item advanced">
               <div class="my-project">
                 <div class="img">
-                  <img src="/img/projects/project1.jpg" alt="Project 3">
+                  <a class="project-popup-link" href="./img/projects/project1.jpg">
+                    <img src="/img/projects/project1.jpg" alt="Project 1">
+                  </a>
                 </div>
                 <div class="title py4">
                   <h4 class="text-uppercase">Web3 Site</h4>
@@ -230,7 +242,32 @@
 
     </main>
     <!-- ==================== End Main Area ==================== -->
-
+    
+    <!-- ==================== Start Footer Area ==================== -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="">
+          <div class="site-logo text-center py-4">
+            <a href="#"><img src="./img/logo2.png" alt=""></a>
+          </div>
+          <div class="social text-center">
+            <h5 class="text-uppercase">Follow Me</h5>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
+          <div class="copyrights text-center">
+            <p class="para">
+              © 2022 |
+              <a href="#"><span style="color:var(--primary-color)">Livio Fran Mascarenhas</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================== End Footer Area ==================== -->
 
     <!-- jQuery JavaScript File -->
     <script src="/JS/jquery-3.6.0.min.js"></script>
@@ -240,6 +277,9 @@
 
     <!-- Isotope JavaScript Library -->
     <script src="/vendor/isotope/isotope.min.js"></script>
+
+    <!-- Magnific Popup Script File -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom  JavaScript File-->
     <script src="/JS/main.js"></script>
