@@ -85,3 +85,12 @@ button:hover,
     z-index: 999;
     transition: background 1s ease;
 }
+
+.custom-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-padding{
+    padding: 0;
+}
