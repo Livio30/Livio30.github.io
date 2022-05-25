@@ -47,11 +47,16 @@ $(document).ready(function(){
         if(screen_width < 670)
         {
             $('.site-main .project-area .button-group').addClass('custom-flex');
-            // $('.site-main .service-area .container').addClass('justify-content-center');
-            $('.site-main .project-area .button-group button').addClass('p-0');
+            $('.site-main .project-area .button-group button + button').addClass('p-0');
         }else{
             $('.site-main .project-area .button-group').removeClass('custom-flex');
-            $('.site-main .project-area .button-group button').removeClass('p-0');
+            $('.site-main .project-area .button-group button + button').removeClass('p-0');
+        }
+        if(screen_width < 370)
+        {
+            $('.social a > i').addClass('p-2');
+        }else{
+            $('.social a > i').removeClass('p-2');
         }
     });
 });

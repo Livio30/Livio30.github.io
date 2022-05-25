@@ -156,6 +156,10 @@
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
+.project-img{
+    width: 370px;
+}
+
 /* ========== End Project Area ========== */
 /* ========== Start Footer Area ========== */
 
@@ -170,7 +174,7 @@ footer .footer-area .social h5{
 
 .social a > i{
     font-size: 22px;
-    padding: 2rem;
+    padding: 1.5rem;
     color:var(--primary-color);
 }
 
